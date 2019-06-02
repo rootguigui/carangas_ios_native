@@ -14,6 +14,14 @@
 		A1B18D171F9C1D7E00313110 /* CarsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B18D161F9C1D7E00313110 /* CarsTableViewController.swift */; };
 		A1B18D191F9C1DBA00313110 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B18D181F9C1DBA00313110 /* AddEditViewController.swift */; };
 		A1B18D1B1F9C1DCF00313110 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B18D1A1F9C1DCF00313110 /* CarViewController.swift */; };
+		A4689AF922A3280100748654 /* CarViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4689AF822A3280100748654 /* CarViewController+Extension.swift */; };
+		A4CDD0C622A2EA6100893390 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CDD0C522A2EA6100893390 /* Service.swift */; };
+		A4CDD0C922A2EAD600893390 /* ServiceMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CDD0C822A2EAD600893390 /* ServiceMethods.swift */; };
+		A4CDD0CD22A2F45700893390 /* CarError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CDD0CC22A2F45700893390 /* CarError.swift */; };
+		A4CDD0D222A2F9A600893390 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CDD0D122A2F9A600893390 /* Brands.swift */; };
+		A4CDD0D422A2F9D100893390 /* BrandsFIPE.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CDD0D322A2F9D100893390 /* BrandsFIPE.swift */; };
+		A4CDD0D622A2FB0700893390 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CDD0D522A2FB0700893390 /* Configuration.swift */; };
+		A4CDD0DA22A30D1500893390 /* AddEditViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CDD0D922A30D1500893390 /* AddEditViewController+Extension.swift */; };
 		A4DB0EA8229E10BC0032F9CA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB0EA7229E10BC0032F9CA /* Car.swift */; };
 		A4DB0EAA229E11720032F9CA /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DB0EA9229E11720032F9CA /* Rest.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +36,14 @@
 		A1B18D161F9C1D7E00313110 /* CarsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewController.swift; sourceTree = "<group>"; };
 		A1B18D181F9C1DBA00313110 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 		A1B18D1A1F9C1DCF00313110 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		A4689AF822A3280100748654 /* CarViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarViewController+Extension.swift"; sourceTree = "<group>"; };
+		A4CDD0C522A2EA6100893390 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A4CDD0C822A2EAD600893390 /* ServiceMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMethods.swift; sourceTree = "<group>"; };
+		A4CDD0CC22A2F45700893390 /* CarError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarError.swift; sourceTree = "<group>"; };
+		A4CDD0D122A2F9A600893390 /* Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
+		A4CDD0D322A2F9D100893390 /* BrandsFIPE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsFIPE.swift; sourceTree = "<group>"; };
+		A4CDD0D522A2FB0700893390 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A4CDD0D922A30D1500893390 /* AddEditViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddEditViewController+Extension.swift"; sourceTree = "<group>"; };
 		A4DB0EA7229E10BC0032F9CA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		A4DB0EA9229E11720032F9CA /* Rest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,18 +78,82 @@
 		A1B18D031F9C1BDD00313110 /* Carangas */ = {
 			isa = PBXGroup;
 			children = (
+				A4CDD0CF22A2F6C200893390 /* Controller */,
+				A4CDD0CE22A2F6BB00893390 /* View */,
+				A4CDD0C722A2EABC00893390 /* Model */,
+				A4CDD0C422A2EA3F00893390 /* Api */,
 				A1B18D041F9C1BDD00313110 /* AppDelegate.swift */,
-				A1B18D161F9C1D7E00313110 /* CarsTableViewController.swift */,
-				A1B18D181F9C1DBA00313110 /* AddEditViewController.swift */,
-				A1B18D1A1F9C1DCF00313110 /* CarViewController.swift */,
-				A1B18D081F9C1BDD00313110 /* Main.storyboard */,
-				A4DB0EA7229E10BC0032F9CA /* Car.swift */,
-				A4DB0EA9229E11720032F9CA /* Rest.swift */,
 				A1B18D0B1F9C1BDD00313110 /* Assets.xcassets */,
-				A1B18D0D1F9C1BDD00313110 /* LaunchScreen.storyboard */,
 				A1B18D101F9C1BDD00313110 /* Info.plist */,
 			);
 			path = Carangas;
+			sourceTree = "<group>";
+		};
+		A4689AF722A327DD00748654 /* CarView */ = {
+			isa = PBXGroup;
+			children = (
+				A1B18D1A1F9C1DCF00313110 /* CarViewController.swift */,
+				A4689AF822A3280100748654 /* CarViewController+Extension.swift */,
+			);
+			path = CarView;
+			sourceTree = "<group>";
+		};
+		A4CDD0C422A2EA3F00893390 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				A4CDD0D022A2F98800893390 /* FIPE */,
+				A4DB0EA9229E11720032F9CA /* Rest.swift */,
+				A4CDD0C522A2EA6100893390 /* Service.swift */,
+				A4CDD0D522A2FB0700893390 /* Configuration.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		A4CDD0C722A2EABC00893390 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4DB0EA7229E10BC0032F9CA /* Car.swift */,
+				A4CDD0C822A2EAD600893390 /* ServiceMethods.swift */,
+				A4CDD0CC22A2F45700893390 /* CarError.swift */,
+				A4CDD0D322A2F9D100893390 /* BrandsFIPE.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4CDD0CE22A2F6BB00893390 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1B18D0D1F9C1BDD00313110 /* LaunchScreen.storyboard */,
+				A1B18D081F9C1BDD00313110 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4CDD0CF22A2F6C200893390 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4689AF722A327DD00748654 /* CarView */,
+				A4CDD0D822A30CE600893390 /* AddEditView */,
+				A1B18D161F9C1D7E00313110 /* CarsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A4CDD0D022A2F98800893390 /* FIPE */ = {
+			isa = PBXGroup;
+			children = (
+				A4CDD0D122A2F9A600893390 /* Brands.swift */,
+			);
+			path = FIPE;
+			sourceTree = "<group>";
+		};
+		A4CDD0D822A30CE600893390 /* AddEditView */ = {
+			isa = PBXGroup;
+			children = (
+				A1B18D181F9C1DBA00313110 /* AddEditViewController.swift */,
+				A4CDD0D922A30D1500893390 /* AddEditViewController+Extension.swift */,
+			);
+			path = AddEditView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,11 +229,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1B18D171F9C1D7E00313110 /* CarsTableViewController.swift in Sources */,
+				A4CDD0C622A2EA6100893390 /* Service.swift in Sources */,
 				A1B18D051F9C1BDD00313110 /* AppDelegate.swift in Sources */,
+				A4CDD0D422A2F9D100893390 /* BrandsFIPE.swift in Sources */,
+				A4CDD0CD22A2F45700893390 /* CarError.swift in Sources */,
 				A4DB0EA8229E10BC0032F9CA /* Car.swift in Sources */,
+				A4CDD0D622A2FB0700893390 /* Configuration.swift in Sources */,
+				A4CDD0C922A2EAD600893390 /* ServiceMethods.swift in Sources */,
 				A4DB0EAA229E11720032F9CA /* Rest.swift in Sources */,
+				A4CDD0D222A2F9A600893390 /* Brands.swift in Sources */,
 				A1B18D191F9C1DBA00313110 /* AddEditViewController.swift in Sources */,
 				A1B18D1B1F9C1DCF00313110 /* CarViewController.swift in Sources */,
+				A4CDD0DA22A30D1500893390 /* AddEditViewController+Extension.swift in Sources */,
+				A4689AF922A3280100748654 /* CarViewController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,31 +8,13 @@
 
 import Foundation
 
-enum CarError {
-    case url
-    case taskError(error: Error)
-    case noResponse
-    case noData
-    case ResponseStatusCode(code: Int)
-    case invalidJson
-}
-
 class REST {
     
     private static let basePath = "https://carangas.herokuapp.com/cars"
     
-    private static let configuration: URLSessionConfiguration = {
-       let config = URLSessionConfiguration.default
-        config.allowsCellularAccess = false
-        config.httpAdditionalHeaders = ["Content-Type": "application/json"]
-        config.timeoutIntervalForRequest = 30.0
-        config.httpMaximumConnectionsPerHost = 5
-        return config
-    }()
-    
-    private static let session =  URLSession(configuration: configuration) //URLSession.shared
-    
     class func loadCars(onComplete: @escaping ([Car]) -> Void, onError: @escaping (CarError) -> Void) {
+        let session = Configuration.session
+        
         guard let url = URL(string: basePath) else {
             onError(.url)
             return
@@ -68,4 +50,15 @@ class REST {
         dataTask.resume()
     }
     
+    class func save(car: Car, onComplete: @escaping (Bool) -> Void) {
+        Service.applyOperation(basePath: "cars", car: car, operation: RESTOperation.save, onComplete: onComplete)
+    }
+    
+    class func update(car: Car, onComplete: @escaping (Bool) -> Void) {
+        Service.applyOperation(basePath: "cars", car: car, operation: RESTOperation.update, onComplete: onComplete)
+    }
+    
+    class func delete(car: Car, onComplete: @escaping (Bool) -> Void) {
+        Service.applyOperation(basePath: "cars", car: car, operation: RESTOperation.delete, onComplete: onComplete)
+    }
 }
